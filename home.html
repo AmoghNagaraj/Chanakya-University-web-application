@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanakya University</title>
+    <style>
+        body {
+            background-color: rgb(241, 241, 241);
+            font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 50px;
+            color: #006c7a;
+            margin: 0;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            max-height: 800px;
+            object-fit: cover;
+        }
+
+        .content {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        nav {
+            background-color: #006c7a;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #004c59;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+    </style>
+    <script>
+        // Example of JavaScript interactivity
+        function changeButtonColor() {
+            var button = document.getElementById("dynamic-button");
+            button.style.backgroundColor = "#45a049";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Chanakya University</h1>
+        </header>
+
+        <img class="hero-image" src="https://image.cnbcfm.com/api/v1/image/106922887-1628206615260-gettyimages-887132600-as1700__08.jpeg?v=1628206641" alt="students">
+
+        <div class="content">
+            <p>
+                Chanakya University is a renowned institution of higher education committed to academic excellence, research innovation, and holistic development of students. With a rich heritage and a forward-looking approach, the university provides a vibrant and inclusive learning environment for students from diverse backgrounds.
+
+                At Chanakya University, students have access to a wide range of undergraduate and postgraduate programs across various disciplines, including engineering, computer science, business management, arts, and sciences. The curriculum is carefully designed to blend theoretical knowledge with practical applications, equipping students with the skills and competencies needed to thrive in their respective fields.<br><br>
+                
+                The university boasts a distinguished faculty comprising accomplished scholars, industry experts, and experienced professionals. These dedicated educators bring a wealth of knowledge and real-world insights into the classrooms, fostering an engaging and intellectually stimulating learning environment. Students benefit from mentorship, guidance, and opportunities for research collaborations, ensuring a comprehensive educational experience.
+                
+                Research and innovation are at the core of Chanakya University's mission. The university actively promotes a culture of research excellence, encouraging faculty and students to pursue cutting-edge research projects that address societal challenges and contribute to advancements in their respective disciplines. State-of-the-art research facilities and collaborations with industry and research institutions further enhance the university's research capabilities.<br><br>
+                
+                Beyond academic pursuits, Chanakya University places emphasis on the holistic development of its students. The university offers a wide range of co-curricular and extracurricular activities, including sports, cultural events, clubs, and community service programs. These opportunities enable students to develop leadership skills, teamwork, cultural awareness, and a sense of social responsibility.
+                
+                The university's strong industry connections and robust placement support ensure that graduates are well-prepared for successful careers. Through internships, industry collaborations, and career counseling services, students gain practical exposure and valuable industry insights, increasing their employability and professional prospects.<br><br>
+                
+                Chanakya University takes pride in its vibrant campus life and inclusive community. The university organizes various events, seminars, and conferences that foster intellectual discourse, cultural exchange, and networking opportunities. Students also benefit from a range of student support services, including counseling, academic advising, and campus facilities that contribute to their overall well-being.
+                
+                In conclusion, Chanakya University stands as a distinguished institution that nurtures talent, fosters innovation, and prepares students to become future leaders and contributors to society. With its unwavering commitment to academic excellence, research, and holistic development, the university continues to shape the next generation of thought leaders, professionals, and change-makers.<br></p>
+            <a href="dept.html" class="button" id="dynamic-button" onclick="changeButtonColor()">Discover More!!</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Login</a></li>
+                <li><a  class="active" href="home.html">Home</a></li>
+                <li><a href="dept.html">Departments</a></li>
+                <li><a href="curriculum.html">Courses and Curriculum</a></li>
+                <li><a href="president.html">President</a></li>
+                <li><a href="reg.html">Registration</a></li>
+            </ul>
+        </nav>
+        <hr>
+
+        <div class="section">
+            <center>
+                <h3>"The best university is the university of life."<br><br>
+                    ~ Henrique Capriles Radonski</h3>
+            </center>
+        </div>
+
+        <hr>
+        <div class="contact-info">
+            <p>Contact Us - Email: chanakyauniv@gmail.com</p>
+            <p>Tel: 080-44897562</p>
+            <p>Ph: 8657423195</p>
+        </div>
+
+        <hr>
+    </div>
+</body>
+</html>

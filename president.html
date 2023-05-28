@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses and Curriculum</title>
+    <style>
+        body {
+            background-color: rgb(234, 191, 92);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        p {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav {
+            background-color: #006c7a;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #004c59;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <div class="container">
+        <h1>The President</h1>
+        
+        <img src="https://www.uh.edu/president/_images/khator-portrait-web.jpg" alt="Dr. Richa Steven" width="400" height="500">
+        <center><h2>Dr. Richa Steven</h2></center>
+        <p>Dr. Richa Steven, the esteemed President of the University of Chanakya, brings a wealth of experience and expertise to her role. With a distinguished academic background and a Ph.D. in Education Administration, Dr. Steven has served in various leadership positions within the education sector for over 25 years. Prior to her appointment as President, she successfully led several prestigious universities, spearheading initiatives to enhance academic excellence, student success, and community engagement. Dr. Steven's visionary leadership and commitment to innovation have resulted in significant advancements in research funding, infrastructure development, and the establishment of strategic partnerships, further elevating the university's reputation as a hub of excellence in higher education.</p>
+    </div>
+    <hr>
+    <div class="container">
+        <h1>The Dean</h1>
+        
+        <img src="https://media.istockphoto.com/id/1324640028/photo/mature-man-in-a-graduation-gown-holding-a-book.jpg?s=612x612&w=0&k=20&c=7yMQdiN6_vGsA2_8-r8V7oDJnhjDRZQBXMJ5fZ6KXc4=" alt="Dr. Richa Steven" width="400" height="500">
+        <center><h2>Dr. Parameshwar</h2></center>
+        <p>Dr. Parameshwar, the esteemed Dean of the University of Chanakya, brings over 20 years of experience in academia and leadership. With a Ph.D. in Economics from a renowned institution, Dr. Parameshwar has held various faculty positions and served as a department chair before assuming his role as Dean. His expertise in curriculum development, research, and fostering a collaborative academic environment has greatly contributed to the growth and success of the university. Under his visionary leadership, the university has witnessed significant advancements in student engagement, faculty development, and industry partnerships, solidifying its reputation as a leading institution in higher education.</p>
+    </div>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="dept.html">Departments</a></li>
+            <li><a href="curriculum.html">Courses and Curriculum</a></li>
+            <li><a class="active" href="president.html">President</a></li>
+            <li><a href="reg.html">Registration</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+        <div class="section">
+            <center>
+                <h3>"The Universe is a great University."<br><br>
+                    ~ Sai Baba</h3>
+            </center>
+        </div>
+
+        <hr>
+    <script>
+        // JavaScript code for interactivity
+
+        // Function to change the background color of the navigation links
+        function changeNavColor() {
+            var navLinks = document.querySelectorAll("nav ul li a");
+
+            navLinks.forEach(function(link) {
+                link.addEventListener("mouseover", function() {
+                    this.style.backgroundColor = "#004c59";
+                });
+
+                link.addEventListener("mouseout", function() {
+                    this.style.backgroundColor = "";
+                });
+            });
+        }
+
+        // Function to display an alert when an image is clicked
+        function showAlert(images) {
+            images.forEach(function(image) {
+                image.addEventListener("click", function() {
+                    var person = this.getAttribute("data-person");
+                    alert("You clicked on " + person);
+                });
+            });
+        }
+
+        // Call the functions when the page is loaded
+        window.onload = function() {
+            changeNavColor();
+
+            var presidentImage = document.querySelector(".container:nth-of-type(1) img");
+            var deanImage = document.querySelector(".container:nth-of-type(2) img");
+            var images = [presidentImage, deanImage];
+            
+            showAlert(images);
+        };
+    </script>
+</body>    
+</html>
